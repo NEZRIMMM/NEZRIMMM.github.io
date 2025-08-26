@@ -7,12 +7,12 @@
 				background-image: url("https://i.imgur.com/0FZk8Dh.gif");
 				background-repeat: no-repeat;
 				background-size: cover;
+				font-family: "Open Sans", sans-serif;
+				color: #00ff00;
+				text-align: center;
 			}
 			.name {
 				font-size: 40px;
-				color: #00ff00;
-				letter-spacing: 0.1em;
-				margin: 0;
 				text-shadow: 0 0 10px #00ff00;
 			}
 			section {
@@ -20,14 +20,22 @@
 				flex-direction: row;
 				width: 100%;
 				justify-content: space-between;
+				margin-top: 20px;
 			}
 			section > div {
 				flex: 1;
+				margin: 0 10px;
+			}
+			section > div:first-child {
+				margin-left: 0;
+			}
+			section > div:last-child {
+				margin-right: 0;
 			}
 		</style>
 	</head>
 	<body>
-		<h1>DONATORS</h1>
+		<h1 style="text-shadow: 0 0 10px #00ff00;">DONATORS</h1>
 		<section>
 			<div>
 				<h2>TOP DONATORS</h2>
