@@ -1,3 +1,25 @@
 * {
-    background-color: black;
+    background-color: #111;
+    color: #eee;
+    font-family: 'VT323', monospace;
+}
+
+body {
+    text-align: center;
+    padding: 20px;
+}
+
+p {
+    font-size: 30px;
+    letter-spacing: 0.1em;
+    margin: 0;
+}
+
+a {
+    color: #777;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fff;
 }
