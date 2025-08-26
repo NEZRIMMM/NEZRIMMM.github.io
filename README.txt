@@ -1,1 +1,0 @@
-# NEZRIMMM.github.io
