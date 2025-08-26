@@ -1,46 +1,178 @@
-<html>
-	<head>
-		<title>ROBLOX DONATORS</title>
-		<link rel="stylesheet" href="style.css">
-		<style>
-			body {
-				background-image: url("https://i.imgur.com/0FZk8Dh.gif");
-				background-repeat: no-repeat;
-				background-size: cover;
-				font-family: "Open Sans", sans-serif;
-				color: #00ff00;
-				text-align: center;
-			}
-			.name {
-				font-size: 40px;
-				text-shadow: 0 0 10px #00ff00;
-			}
-			section {
-				display: block;
-				margin-top: 20px;
-			}
-		</style>
-	</head>
-	<body>
-		<h1 style="text-shadow: 0 0 10px #00ff00;">DONATORS</h1>
-		<section>
-			<h2>TOP DONATORS</h2>
-			<a href="#" class="name">Name</a>
-			<a href="#" class="name">Name</a>
-			<a href="#" class="name">Name</a>
-		</section>
-		<section>
-			<h2>MID DONATORS</h2>
-			<a href="#" class="name">Name</a>
-			<a href="#" class="name">Name</a>
-			<a href="#" class="name">Name</a>
-		</section>
-		<section>
-			<h2>LOW DONATORS</h2>
-			<a href="#" class="name">Name</a>
-			<a href="#" class="name">Name</a>
-			<a href="#" class="name">Name</a>
-		</section>
-	</body>
-</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROBLOX DONATORS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        main {
+            font-family: 'Roboto', sans-serif;
+            background-color: #0f0f0f;
+            color: #eee;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        header {
+            background: #111;
+            padding: 20px 40px;
+            border-radius: 12px;
+            box-shadow: 0 0 20px #00ff00;
+            text-align: center;
+            animation: glow 2s infinite alternate;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            color: #00ff00;
+            text-shadow: 0 0 15px #00ff00;
+        }
+
+        /* Sections */
+        .donator-section {
+            background: #1a1a1a;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+            width: 100%;
+            max-width: 900px;
+            box-shadow: 0 0 15px #00ff00;
+        }
+
+        .donator-section h2 {
+            text-align: center;
+            font-size: 2rem;
+            color: #00ff00;
+            text-shadow: 0 0 10px #00ff00;
+            margin-bottom: 20px;
+        }
+
+        /* Donator Cards */
+        .donator-card {
+            background: #222;
+            padding: 15px 20px;
+            margin: 10px 0;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: transform 0.2s ease, box-shadow 0.3s ease;
+            width: 200px;
+        }
+
+        .donator-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 20px #00ff00;
+        }
+
+        /* Circle Name */
+        .name {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: #00ff00;
+            color: #111;
+            font-size: 1rem;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        .name:hover {
+            background: #66ff66;
+            color: #000;
+        }
+
+        .donator-card p {
+            color: #00ff00;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        /* Glow Animation */
+        @keyframes glow {
+            from {
+                box-shadow: 0 0 10px #00ff00;
+            }
+            to {
+                box-shadow: 0 0 25px #00ff00;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DONATORS</h1>
+    </header>
+
+    <main>
+        <!-- Top Donators -->
+        <section class="donator-section">
+            <h2>TOP DONATORS</h2>
+            <div class="donator-card">
+                <a href="#" class="name">Yems</a>
+                <p><img src="robux.png" alt="Robux" width="18" height="18"> 10,000</p>
+            </div>
+            <!---<div class="donator-card">
+                <a href="#" class="name">N</a>
+                <p><img src="robux.png" alt="Robux" width="18" height="18"> 7,500</p>
+            </div>
+            <div class="donator-card">
+                <a href="#" class="name">A</a>
+                <p><img src="robux.png" alt="Robux" width="18" height="18"> 5,000</p>
+            </div>--->
+        </section>
+
+        <!-- Mid Donators -->
+        <section class="donator-section">
+            <h2>MID DONATORS</h2>
+            <!--<div class="donator-card">
+                <a href="#" class="name">B</a>
+                <p><img src="robux.png" alt="Robux" width="18" height="18"> 2,500</p>
+            </div>
+            <div class="donator-card">
+                <a href="#" class="name">C</a>
+                <p><img src="robux.png" alt="Robux" width="18" height="18"> 1,800</p>
+            </div>
+            <div class="donator-card">
+                <a href="#" class="name">D</a>
+                <p><img src="robux.png" alt="Robux" width="18" height="18"> 1,200</p>
+            </div>--->
+        </section>
+
+        <!-- Low Donators -->
+        <section class="donator-section">
+            <h2>LOW DONATORS</h2>
+            <div class="donator-card">
+                <a href="#" class="name">Sano</a>
+                <p><img src="robux.png" alt="Robux" width="18" height="18"> 50</p>
+            </div>
+            <!--<div class="donator-card">
+                <a href="#" class="name">F</a>
+                <p><img src="robux.png" alt="Robux" width="18" height="18"> 300</p>
+            </div>
+            <div class="donator-card">
+                <a href="#" class="name">G</a>
+                <p><img src="robux.png" alt="Robux" width="18" height="18"> 100</p>
+            </div>--->
+        </section>
+    </main>
+</body>
+</html>
